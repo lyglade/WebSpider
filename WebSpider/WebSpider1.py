@@ -27,7 +27,7 @@ service=http%3A%2F%2Fportal.hnist.cn%2Fuser%2FsimpleSSOLogin'#学校登录的URL
 page = requests.Session()     #用Session发出请求能自动处理Cookie等问题
 page.headers = header         #为所有请求设置头
 page.get(School_login_url)    #Get该地址建立连接(通常GET该网址后，服务器会发送一些用于\
-                                # 验证的参数用于识别用户，这些参数在这就全由requests.Session处理了)
+                            # 验证的参数用于识别用户，这些参数在这就全由requests.Session处理了)
 
 
 def Get_lt():    #获取参数 lt 的函数
@@ -101,8 +101,8 @@ c0-param26=string:
 """
 #
 
-f = page.post('http://portal.hnist.cn/portal_bg_ext/dwr/plainjs/
-ShowTableAction.showContent.dwr',\data=str,proxies=proxies)
+f = page.post('http://portal.hnist.cn/portal_bg_ext/dwr/plainjs/ShowTableAction.showContent.dwr',\
+data=str,proxies=proxies)
  #查成绩的地址，表单参数为上面的str
   
 ######  查看地址，返回状态，以及原始内容#######"""
@@ -116,8 +116,8 @@ print(text.encode().decode()) #因为原始内容中有\uxxx形式的编码，所以使用这句解码
 ###################################################################
 #  解析获得的内容，并清洗数据，格式化输出...
 ############################# 3 ####################################
---------------------- 
+'''--------------------- 
 作者：跬步至以千里 
 来源：CSDN 
 原文：https://blog.csdn.net/qq_32740675/article/details/79720367 
-版权声明：本文为博主原创文章，转载请附上博文链接！
+版权声明：本文为博主原创文章，转载请附上博文链接！'''
