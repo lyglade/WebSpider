@@ -13,12 +13,12 @@ class huoche(object):
 	#�û���������
 	username = u"xxx"
 	passwd = u"xxx"
-	# cookiesֵ���Լ�ȥ��, ���������ֱ�������, ������
+	# cookiesֵ���Լ�ȥ��, ���������ֱ�������, ������            
 	starts = u"%u6C88%u9633%2CSYT"
 	ends = u"%u54C8%u5C14%u6EE8%2CHBB"
 	
 	# ʱ���ʽ2018-01-19
-	dtime = u"2018-01-19"
+	dtime = u"2018-01-19"    
 	# ���Σ�ѡ��ڼ��ˣ�0�����֮�����ε��
 	order = 0
 	###�˿���
